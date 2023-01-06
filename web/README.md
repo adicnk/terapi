@@ -1,1 +1,1 @@
-# Applikasi mobile untuk terapis
+# Applikasi web untuk terapis
