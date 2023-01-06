@@ -1,0 +1,7 @@
+{
+  "name": "ttaApps",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

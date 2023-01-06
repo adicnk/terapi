@@ -1,0 +1,82 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      User Information
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" *ngIf="clients">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Info</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item-divider>
+    <ion-icon name="person"></ion-icon><h3 ion-text color="secondary">&nbsp;Basic Information</h3>
+  </ion-item-divider>
+  <ion-item>
+    <span>Name : {{clients.first_name}} {{clients.last_name}}</span>
+  </ion-item>
+  <ion-item>
+    <ion-label>HP : {{clients.hp}}</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Email : {{clients.email}}</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item-divider>
+    <ion-icon name="log-in-outline"></ion-icon><h3 ion-text color="secondary">&nbsp;Login Information</h3>
+  </ion-item-divider>
+  <ion-item>
+    <ion-label>Username : {{clients.username}}</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item-divider>
+    <ion-icon name="share-social-outline"></ion-icon><h3 ion-text color="secondary">&nbsp;Social Media Information</h3>
+  </ion-item-divider>
+  <ion-item>
+    <ion-label>FB : </ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>IG : </ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Tiktok :</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item-divider>
+    <ion-icon name="body"></ion-icon><h3 ion-text color="secondary">&nbsp;Broker Information</h3>
+  </ion-item-divider>
+  <ion-item>
+    <ion-label>Kode : </ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>User ID : {{clients.user_id}}</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <ion-item-divider>
+    <ion-icon name="calendar"></ion-icon><h3 ion-text color="secondary">&nbsp;Join Information</h3>
+  </ion-item-divider>
+  <ion-item>
+    <ion-label>Date : {{clients.join_date}}</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <!-- <app-explore-container name="Info"></app-explore-container> -->
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title style="text-align: center"><h6 ion-text color="secondary">Taurus Trading Academy</h6></ion-title>
+  </ion-toolbar>
+</ion-footer>

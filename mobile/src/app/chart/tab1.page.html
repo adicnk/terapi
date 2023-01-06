@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Chart
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title style="text-align: center" size="large">Chart</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-img width="80" height="80" src=""></ion-img>
+  <div class="ion-text-center">
+    <h6 ion-text color="secondary" >Caption Information</h6>
+  </div>
+
+  <ion-item-divider>
+  </ion-item-divider>
+
+  <ion-img width="80" height="80" src=""></ion-img>
+  <div class="ion-text-center">
+    <h6 ion-text color="secondary" >Caption Information</h6>
+  </div>
+  
+  <!-- <app-explore-container name="Chart"></app-explore-container> -->
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid >
+      <ion-row style="text-align: center">
+          <ion-col>
+            <ion-item>          
+            <ion-input placeholder="Kode"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>            
+            <ion-select placeholder="Timeframe" interface="popover" [(ngModel)]="gender">
+              <ion-select-option value="d">Daily</ion-select-option>
+              <ion-select-option value="w">Weekly</ion-select-option>
+              <ion-select-option value="m">Montly</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+        <ion-col>
+          <ion-item>            
+            <ion-button expand="full" class="no-padding" color="primary" (click)="tryShow()">Show</ion-button>   
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>
