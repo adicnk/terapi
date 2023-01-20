@@ -1,3 +1,5 @@
 Program ini dibuat awalnya untuk terapiku di GM Terapi (Perkumpulan Gus Mus Raksa Jasad)
 
-Link di PC(file:///C:\xampp\htdocs\terapi\web\documentation\about.txt)
+[Link di PC](file:///C:\xampp\htdocs\terapi\web\documentation\about.txt)
+
+ [official site](http://pait.devinc.website)
