@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Login PAIT</title>
+    <title>Terapi Login</title>
 
     <!-- Custom fonts for this template-->
     <link href="admin_assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -41,13 +41,13 @@
                                     </div>
                                     <hr>
                                     <div class="small text-center mb-3">
-                                        MAHASISWA LOGIN
+                                        TERAPIST LOGIN
                                     </div>
                                     <hr>
                                     <form method="post" action="exercise/login" class="user">
                                         <div class="form-group">
                                             <!-- <input type="email" class="form-control form-control-user" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter Email Address..."> -->
-                                            <input type="text" class="form-control form-control-user" name="username" id="email" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                                            <input type="text" class="form-control form-control-user" name="username" id="email" aria-describedby="emailHelp" placeholder="Enter Username...">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user" name="password" id="password" placeholder="Password">
@@ -58,7 +58,7 @@
                                     </form>
                                     <hr>
                                     <div class="small text-center">
-                                        Physical Assement based on Interactive Technology
+                                        The Terapist Login for The Patient
                                     </div>
                                 </div>
                             </div>

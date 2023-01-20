@@ -27,7 +27,7 @@ class Exercise extends BaseController
     public function index()
     {
         $data = [
-            'title' => "PAIT @ PPNI"
+            'title' => "PERGURUAN MGM"
         ];
 
         return view('exercise/login', $data);
