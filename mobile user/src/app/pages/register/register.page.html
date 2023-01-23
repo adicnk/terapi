@@ -1,0 +1,52 @@
+<ion-header no-border>
+  <ion-toolbar color="success">
+    <ion-title>Register TTA</ion-title>
+    <ion-button slot="start">      
+      <ion-back-button></ion-back-button>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form #f="ngForm" (ngSubmit)="tryRegister(f)">
+      <ion-item>
+        <ion-input type="text" placeholder="Name" ngModel name="name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Gender</ion-label>
+        <ion-select interface="popover" ngModel name="gender">
+          <ion-select-option value="f">Female</ion-select-option>
+          <ion-select-option value="m">Male</ion-select-option>
+        </ion-select>
+      </ion-item>      
+      <ion-item>
+        <ion-label>Date of Birthday</ion-label>
+        <div class="ion-text-end">          
+          <ion-input [value]="dateValue" ngModel name="dob"></ion-input>
+        </div>        
+        <ion-button slot="end" fill="clear" id="open-date-input">
+          <ion-icon icon="calendar"></ion-icon>
+        </ion-button>
+        <ion-popover trigger="open-date-input" show-backdrop="false">
+          <ng-template>
+            <ion-datetime
+              #popoverDatetime
+              presentation="date"
+              (ionChange)="dateValue = formatDate(popoverDatetime.value)"
+            ></ion-datetime>
+          </ng-template>
+        </ion-popover>
+      </ion-item>       
+      <ion-item>
+        <ion-input type="text" placeholder="Username" ngModel name="username"></ion-input>
+      </ion-item>
+      <ion-item>      
+        <ion-input type="password" placeholder="Password" ngModel name="password"></ion-input>
+      </ion-item>
+      <ion-item>      
+        <ion-input type="password" placeholder="Confirm Password" ngModel name="confirm_password"></ion-input>
+      </ion-item>
+      <ion-button expand="full" class="no-padding" color="secondary" type="submit">Register</ion-button>      
+    
+    </form>
+</ion-content>
